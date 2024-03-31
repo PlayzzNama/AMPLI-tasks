@@ -1,0 +1,735 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 120 version
+*/
+
+@font-face {
+  font-family: "Montserat";
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 18px 200px;
+}
+header .nav-links {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .nav-links:not(:last-child) {
+  margin-left: 48px;
+}
+
+main {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  padding: 192px 200px;
+}
+main .main-text {
+  width: 535px;
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+main .under-main-text {
+  width: 537px;
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  margin-top: 8px;
+}
+main .btn-container {
+  padding: 16px 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background: #E05124;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(224, 81, 36, 0.4);
+     -moz-box-shadow: 0px 8px 30px 0px rgba(224, 81, 36, 0.4);
+          box-shadow: 0px 8px 30px 0px rgba(224, 81, 36, 0.4);
+  text-align: center;
+  width: 306px;
+  margin-top: 36px;
+}
+main .btn {
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main .avocado {
+  width: 1040px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 147px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+  margin-top: 203px;
+  padding: 38px 0 38px 24px;
+}
+main .avocado h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: none;
+}
+main .text p {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  margin-top: 19px;
+}
+main .avocado-img {
+  -webkit-filter: drop-shadow(0 16px 100px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 16px 100px rgba(0, 0, 0, 0.2));
+}
+main .subs {
+  margin-top: 244px;
+}
+main .subs .title h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: none;
+}
+main .subs .title span {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  margin-top: 8px;
+}
+main .subs .card-holder {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 336px 16px 336px 16px 336px;
+  grid-template-columns: 336px 336px 336px;
+  grid-gap: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .subs .card-grey {
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
+  -webkit-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+}
+main .subs .card-grey .card-title {
+  padding: 32px;
+  text-align: center;
+}
+main .subs .card-grey h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .subs .card-grey .perf {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  margin-top: 16px;
+}
+main .subs .card-grey .price-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 134px 16px 124px;
+  background-color: #f2f2f2;
+}
+main .subs .card-grey .price-holder .price {
+  color: #E05124;
+  font-family: "Montserat";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main .subs .card-grey .price-holder .price .dol {
+  font-size: 22px;
+  margin-right: 5px;
+}
+main .subs .card-grey .row {
+  color: #E05124;
+  font-family: "Montserat";
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .subs .card-grey .row-grey {
+  background-color: #f2f2f2;
+}
+main .subs .card-grey .row-green-txt {
+  color: #32870A;
+  font-family: "Montserat";
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .subs .card-grey-2 {
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
+  -webkit-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+}
+main .subs .card-grey-2 .card-title {
+  padding: 32px;
+  text-align: center;
+}
+main .subs .card-grey-2 h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .subs .card-grey-2 .perf {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  margin-top: 16px;
+}
+main .subs .card-grey-2 .price-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 134px 16px 124px;
+  background-color: #f2f2f2;
+}
+main .subs .card-grey-2 .price-holder .price {
+  color: #E05124;
+  font-family: "Montserat";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main .subs .card-grey-2 .price-holder .price .dol {
+  font-size: 22px;
+  margin-right: 5px;
+}
+main .subs .card-grey-2 .row {
+  color: #32870A;
+  font-family: "Montserat";
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .subs .card-grey-2 .row-grey {
+  background-color: #f2f2f2;
+}
+main .subs .card-green {
+  background: -webkit-linear-gradient(305deg, #22E871 15.38%, #658324 79.28%, #A56B26 100%);
+  background: -moz-linear-gradient(305deg, #22E871 15.38%, #658324 79.28%, #A56B26 100%);
+  background: -o-linear-gradient(305deg, #22E871 15.38%, #658324 79.28%, #A56B26 100%);
+  background: linear-gradient(145deg, #22E871 15.38%, #658324 79.28%, #A56B26 100%);
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
+  -webkit-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.2);
+}
+main .subs .card-green .card-title {
+  padding: 32px;
+  text-align: center;
+}
+main .subs .card-green h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 1;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+main .subs .card-green .perf {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  margin-top: 16px;
+  color: white;
+}
+main .subs .card-green .price-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 134px 16px 124px;
+  background-color: #69c571;
+}
+main .subs .card-green .price-holder .price {
+  color: #E05124;
+  font-family: "Montserat";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main .subs .card-green .price-holder .price .dol {
+  font-size: 22px;
+  margin-right: 5px;
+}
+main .subs .card-green .row {
+  color: white;
+  font-family: "Montserat";
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .subs .card-green .row-grey {
+  background-color: #69c571;
+}
+main .diets {
+  margin-top: 145px;
+}
+main .diets .diets-card-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 512px 50px 512px;
+  grid-template-columns: 512px 512px;
+  grid-gap: 42px 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+main .diets .diet-title h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: none;
+}
+main .diets .diet-title span {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+}
+main .diets .diet-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 512px;
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
+  background: -webkit-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: -moz-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: -o-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: linear-gradient(113deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  -webkit-box-shadow: 0px 20px 100px 0px rgba(33, 99, 10, 0.65);
+     -moz-box-shadow: 0px 20px 100px 0px rgba(33, 99, 10, 0.65);
+          box-shadow: 0px 20px 100px 0px rgba(33, 99, 10, 0.65);
+  padding: 0 0 40px 32px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 156px;
+}
+main .diets .diet-card h1 {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 1;
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 40px;
+}
+main .diets .diet-card .smallF {
+  width: 338px;
+}
+main .diets .diet-card .right .pineapple {
+  margin-top: -18px;
+}
+main .diets .diet-card .right .cheese {
+  margin-top: 76px;
+}
+main .diets .diet-card .right .indeia {
+  margin-top: -26px;
+}
+main .diets .diet-card .right .khurma {
+  margin-top: 12px;
+}
+main .diets .diet-card li {
+  list-style: none;
+  color: white;
+  font-family: "Montserat";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+main .diets .diet-card ul {
+  margin-top: 12px;
+}
+main .diets .small {
+  height: 120px;
+}
+main .users {
+  width: 1032px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  padding: 17px;
+  margin-top: 135px;
+  height: 627px;
+}
+main .users h1 {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+main .users .users-table {
+  width: 998px;
+  height: 537px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 325px 277px 232px 163px;
+  grid-template-columns: 325px 277px 232px 163px;
+  padding: 26px 16px;
+}
+main .users .users-table .table-rows .first {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 21.1px 16px 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+main .users .users-table .table-rows .first .photo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .users .users-table .table-rows .first .photo p {
+  margin-left: 8px;
+}
+main .users .users-table .table-rows .first .under {
+  margin-left: 28px;
+  color: var(--Black-Light, rgba(0, 0, 0, 0.5));
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 400;
+}
+main .users .users-table .table-rows .date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 16px 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+main .users .users-table .table-rows .date p {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+main .users .users-table .table-rows .date span {
+  color: var(--Black-Light, rgba(0, 0, 0, 0.5));
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 400;
+}
+main .users .users-table .table-rows .name {
+  padding: 35px 16px 20px 0;
+  color: black;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+main .users .users-table .table-rows .active {
+  padding: 35px 16px 20px 0;
+  color: var(--Success-Default, #3CC13B);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: -webkit-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: -moz-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: -o-linear-gradient(337deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  background: linear-gradient(113deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+  padding: 40px 201px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-logo img {
+  margin-right: 36px;
+}
+footer .footer-logo span {
+  font-family: "Montserat";
+  color: #000;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  color: white;
+}
+footer .footer-nav .footer-links {
+  text-decoration: none;
+  font-family: "Montserat";
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+footer .footer-nav .footer-links:not(:last-child) {
+  margin-right: 40px;
+}
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -moz-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

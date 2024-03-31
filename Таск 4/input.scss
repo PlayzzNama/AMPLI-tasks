@@ -1,0 +1,528 @@
+$greyBg: #f2f2f2;
+$greenColor: #32870A;
+$redColor: #E05124;
+$greenBg: #69c571;
+$lightGrey: var(--Black-Light, rgba(0, 0, 0, 0.50));
+
+@font-face {
+    font-family: 'Montserat';
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@mixin mainFont($o, $w, $s, $tt) {
+    font-family: 'Montserat';
+    color: #000;
+    opacity: $o;
+    font-weight: $w;
+    font-size: $s;
+    text-transform: $tt;
+}
+
+@mixin tableFont($c, $s, $w) {
+    color: $c;
+    font-family: 'Open Sans';
+    font-size: $s;
+    font-weight: $w;
+}
+
+@mixin cardFont($c) {
+    color: $c;
+    font-family: 'Montserat';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin cardFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 18px 200px;
+
+
+    .nav-links {
+        @include mainFont(0.7, 700, 12px, uppercase);
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-left: 48px;
+        }
+    }
+}
+
+main {
+    justify-content: center;
+    display: grid;
+    padding: 192px 200px;
+
+    .main-text {
+        width: 535px;
+        @include mainFont(0.8, 800, 48px, uppercase);
+    }
+
+    .under-main-text {
+        width: 537px;
+        @include mainFont(0.7, 400, 16px, none);
+        margin-top: 8px;
+    }
+
+    .btn-container {
+        padding: 16px 0;
+        border-radius: 4px;
+        background: #E05124;
+        box-shadow: 0px 8px 30px 0px rgba(224, 81, 36, 0.40);
+        text-align: center;
+        width: 306px;
+        margin-top: 36px;
+    }
+
+    .btn {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .avocado {
+        width: 1040px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        height: 147px;
+        border-radius: 15px;
+        box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+        margin-top: 203px;
+        padding: 38px 0 38px 24px;
+
+        h1 {
+            @include mainFont(0.8, 800, 32px, none)
+        }
+    }
+
+    .text {
+        p {
+            @include mainFont(0.7, 400, 16px, none);
+            margin-top: 19px;
+        }
+    }
+
+    .avocado-img {
+        filter: drop-shadow(0 16px 100px rgba(0, 0, 0, .2));
+    }
+
+    .subs {
+
+        margin-top: 244px;
+
+        .title {
+            h1 {
+                @include mainFont(0.8, 800, 24px, none)
+            }
+
+            span {
+                @include mainFont(0.7, 400, 16px, none);
+                margin-top: 8px;
+            }
+        }
+
+        .card-holder {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 336px 336px 336px;
+            grid-gap: 16px;
+            justify-content: center;
+        }
+
+        .card-grey {
+
+            border-radius: 16px;
+            box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.20);
+
+
+
+            .card-title {
+                padding: 32px;
+                text-align: center
+            }
+
+            h1 {
+                @include mainFont(0.8, 800, 32px, uppercase);
+                text-align: center;
+            }
+
+            .perf {
+                @include mainFont(0.7, 400, 14px, none);
+                margin-top: 16px;
+            }
+
+            .price-holder {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 16px 134px 16px 124px;
+                background-color: $greyBg;
+
+                .price {
+                    color: #E05124;
+                    font-family: 'Montserat';
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.40);
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: start;
+
+
+                    .dol {
+                        font-size: 22px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .row {
+                @include cardFont($redColor);
+                @include cardFlex();
+            }
+
+
+            .row-grey {
+                background-color: $greyBg;
+            }
+
+            .row-green-txt {
+                @include cardFont($greenColor);
+                @include cardFlex();
+            }
+        }
+
+        .card-grey-2 {
+
+            border-radius: 16px;
+            box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.20);
+
+
+
+            .card-title {
+                padding: 32px;
+                text-align: center
+            }
+
+            h1 {
+                @include mainFont(0.8, 800, 32px, uppercase);
+                text-align: center;
+            }
+
+            .perf {
+                @include mainFont(0.7, 400, 14px, none);
+                margin-top: 16px;
+            }
+
+            .price-holder {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 16px 134px 16px 124px;
+                background-color: $greyBg;
+
+                .price {
+                    color: #E05124;
+                    font-family: 'Montserat';
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.40);
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: start;
+
+
+                    .dol {
+                        font-size: 22px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .row {
+                @include cardFont($greenColor);
+                @include cardFlex();
+            }
+
+
+            .row-grey {
+                background-color: $greyBg;
+            }
+        }
+
+        .card-green {
+            background: linear-gradient(145deg, #22E871 15.38%, #658324 79.28%, #A56B26 100%);
+            border-radius: 16px;
+
+            box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.20);
+
+
+
+            .card-title {
+                padding: 32px;
+                text-align: center
+            }
+
+            h1 {
+                @include mainFont(1, 800, 32px, uppercase);
+                text-align: center;
+                color: white
+            }
+
+            .perf {
+                @include mainFont(1, 400, 14px, none);
+                margin-top: 16px;
+                color: white;
+            }
+
+            .price-holder {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 16px 134px 16px 124px;
+                background-color: $greenBg;
+
+                .price {
+                    color: #E05124;
+                    font-family: 'Montserat';
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 8px 8px 30px rgba(224, 81, 36, 0.40);
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: start;
+
+
+                    .dol {
+                        font-size: 22px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .row {
+                @include cardFont(white);
+                @include cardFlex();
+            }
+
+
+            .row-grey {
+                background-color: $greenBg;
+            }
+        }
+    }
+
+
+    .diets {
+        margin-top: 145px;
+
+        .diets-card-holder {
+            display: grid;
+            grid-template-columns: 512px 512px;
+            grid-gap: 42px 50px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+
+        .diet-title {
+            h1 {
+                @include mainFont(0.8, 700, 24px, none)
+            }
+
+            span {
+                @include mainFont(0.7, 400, 16px, none);
+            }
+        }
+
+        .diet-card {
+            display: flex;
+            width: 512px;
+            border-radius: 16px;
+            background: linear-gradient(113deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+            box-shadow: 0px 20px 100px 0px rgba(33, 99, 10, 0.65);
+            padding: 0 0 40px 32px;
+            justify-content: space-between;
+            height: 156px;
+
+            h1 {
+                @include mainFont(1, 800, 22px, uppercase);
+                color: white;
+                padding-top: 40px;
+            }
+
+            .smallF {
+                width: 338px;
+            }
+
+
+            .right {
+                .pineapple {
+                    margin-top: -18px;
+                }
+
+                .cheese {
+                    margin-top: 76px;
+                }
+
+                .indeia {
+                    margin-top: -26px;
+                }
+
+                .khurma {
+                    margin-top: 12px;
+                }
+            }
+
+            li {
+                list-style: none;
+                @include cardFont(white);
+                margin-top: 4px;
+            }
+
+            ul {
+                margin-top: 12px;
+            }
+        }
+
+        .small {
+            height: 120px;
+        }
+    }    
+
+    .users {
+        width: 1032px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        display: grid;
+        padding: 17px;
+        margin-top: 135px;
+        height: 627px;
+
+        h1 {
+            @include tableFont(black, 20px, 600);
+            margin-bottom: 25px;
+        }
+
+        .users-table {
+            width: 998px;
+            height: 537px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            display: grid;
+            grid-template-columns: 325px 277px 232px 163px;
+            padding: 26px 16px;
+        
+            .table-rows {
+                
+                .first {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 21.1px 16px 16px 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);
+                    .photo {
+                        display: flex;
+
+                        p {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .under {
+                        margin-left: 28px;
+                        @include tableFont($lightGrey, 10px, 400)
+                    }
+                }
+
+                .date {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 25px 16px 16px 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);
+                    p {
+                        @include tableFont(black, 12px, 400)
+                    }
+
+                    span {
+                        @include tableFont($lightGrey, 10px, 400)
+                    }
+                }
+
+                .name {
+                    padding: 35px 16px 20px 0;
+                    @include tableFont(black, 12px, 400);
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);
+                }
+
+                .active {
+                    padding: 35px 16px 20px 0;
+                    @include tableFont(var(--Success-Default, #3CC13B), 12px, 600);
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(113deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+    padding: 40px 201px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 36px;
+        }
+
+        span {
+            @include mainFont(1, 400, 14px, none);
+            color: white;
+        }
+    }
+
+    .footer-nav {
+        .footer-links {
+            text-decoration: none;
+            @include mainFont(1, 700, 12px, uppercase);
+            color: white;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+}
